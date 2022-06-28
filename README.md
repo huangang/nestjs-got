@@ -8,13 +8,13 @@ This is a simple nestjs module that exposes the [got](https://www.npmjs.com/pack
 </p>
 
 <p align='center'>
-    <a href="https://www.npmjs.com/package/@t00nday/nestjs-got" target='_blank'><img alt="npm" src="https://img.shields.io/npm/dm/@t00nday/nestjs-got" alt="NPM Downloads"></a>
+    <a href="https://www.npmjs.com/package/@huangang/nestjs-got" target='_blank'><img alt="npm" src="https://img.shields.io/npm/dm/@huangang/nestjs-got" alt="NPM Downloads"></a>
     <a href="https://coveralls.io/github/toondaey/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="Coveralls github" src="https://img.shields.io/coveralls/github/toondaey/nestjs-got"></a>
-    <a href="https://www.npmjs.com/package/@t00nday/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="npm version" src="https://img.shields.io/npm/v/@t00nday/nestjs-got?color=%234CC61E&label=NPM&logo=NPM"></a>
-    <a href="https://www.npmjs.com/package/@t00nday/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="LICENCE" src="https://img.shields.io/npm/l/@t00nday/nestjs-got"></a>
+    <a href="https://www.npmjs.com/package/@huangang/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="npm version" src="https://img.shields.io/npm/v/@huangang/nestjs-got?color=%234CC61E&label=NPM&logo=NPM"></a>
+    <a href="https://www.npmjs.com/package/@huangang/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="LICENCE" src="https://img.shields.io/npm/l/@huangang/nestjs-got"></a>
     <a href="https://circleci.com/gh/toondaey/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="CircleCI build" src="https://img.shields.io/circleci/build/gh/toondaey/nestjs-got/master"></a>
-    <a href="https://www.npmjs.com/package/@t00nday/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="npm bundle size (scoped)" src="https://img.shields.io/bundlephobia/min/@t00nday/nestjs-got?color=#4CC61E"></a>
-    <a href="https://www.npmjs.com/package/@t00nday/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="synk vulnerabilities" src="https://img.shields.io/snyk/vulnerabilities/npm/@t00nday/nestjs-got"></a>
+    <a href="https://www.npmjs.com/package/@huangang/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="npm bundle size (scoped)" src="https://img.shields.io/bundlephobia/min/@huangang/nestjs-got?color=#4CC61E"></a>
+    <a href="https://www.npmjs.com/package/@huangang/nestjs-got" target="_blank" rel="noopener noreferrer"><img alt="synk vulnerabilities" src="https://img.shields.io/snyk/vulnerabilities/npm/@huangang/nestjs-got"></a>
 </p>
 
 <details>
@@ -41,11 +41,11 @@ Installation is pretty simple and straightforward as all you have to do is run t
 
 -   npm
 
-`npm install --save @t00nday/nestjs-got got`
+`npm install --save @huangang/nestjs-got got`
 
 -   yarn
 
-`yarn add @t00nday/nestjs-got got`
+`yarn add @huangang/nestjs-got got`
 
 ## Usage
 
@@ -57,7 +57,7 @@ This could be done synchronously using the `register()` method:
 
 ```ts
 import { Module } from '@nestjs/common';
-import { GotModule } from '@t00nday/nestjs-got';
+import { GotModule } from '@huangang/nestjs-got';
 
 @Module({
     imports: [
@@ -84,7 +84,7 @@ Examples below:
 import { 
     GotModule, 
     GotModuleOptions 
-} from '@t00nday/nestjs-got';
+} from '@huangang/nestjs-got';
 import { Module } from '@nestjs/common';
 
 @Module({
@@ -107,7 +107,7 @@ export class AppModule {}
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { GotModuleOptions, GotOptionsFactory } from '@t00nday/nestjs-got';
+import { GotModuleOptions, GotOptionsFactory } from '@huangang/nestjs-got';
 
 @Injectable()
 export class GotConfigService implements GotModuleOptionsFactory {
@@ -127,7 +127,7 @@ The `GotConfigService` **SHOULD** implement the `GotModuleOptionsFactory`, **MUS
 ```ts
 // prettier-ignore
 import { Module } from '@nestjs/common';
-import { GotModule, GotModuleOptions } from '@t00nday/nestjs-got';
+import { GotModule, GotModuleOptions } from '@huangang/nestjs-got';
 
 import { GotConfigService } from './got-config.service.ts';
 
